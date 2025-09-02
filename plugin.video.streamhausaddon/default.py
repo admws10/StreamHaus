@@ -15,6 +15,10 @@ def search_movies():
 
     # volání parseru pro vyhledání filmů
     movies = parser.search_movies(keyboard)
+    if not movies:
+        xbmcgui.Dialog().notification("Info", "Žádné filmy nenalezeny", xbmcgui.NOTIFICATION_INFO)
+        return
+
     for movie in movies:
         url = f"?action=play&title={urllib.parse.quote(movie['title'])}&link={urllib.parse.quote(movie['url'])}"
         li = xbmcgui.ListItem(label=movie['title'])
@@ -22,7 +26,7 @@ def search_movies():
     xbmcplugin.endOfDirectory(handle)
 
 def play_movie(title, link):
-    # volání parseru pro získání přímého odkazu na stream
+    xbmcgui.Dialog().notification("Info", f"Načítání {title}", xbmcgui.NOTIFICATION_INFO)
     url = parser.get_stream_url_from_page(link)
     if url:
         xbmc.Player().play(url)
