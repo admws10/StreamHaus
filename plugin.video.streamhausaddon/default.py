@@ -5,14 +5,15 @@ import xbmcgui
 from resources.lib import parser
 
 handle = int(sys.argv[1])
+params = dict(urllib.parse.parse_qsl(sys.argv[2][1:]))
 
 def search_movies():
-    # otevře dialog pro zadání názvu filmu
+    # input box pro zadání názvu filmu
     keyboard = xbmcgui.Dialog().input("Zadej název filmu")
     if not keyboard:
         return
 
-    # získá seznam filmů podle parseru
+    # volání parseru pro vyhledání filmů
     movies = parser.search_movies(keyboard)
     for movie in movies:
         url = f"?action=play&title={urllib.parse.quote(movie['title'])}&link={urllib.parse.quote(movie['url'])}"
@@ -21,13 +22,14 @@ def search_movies():
     xbmcplugin.endOfDirectory(handle)
 
 def play_movie(title, link):
-    # zavolá parser pro přímý stream
+    # volání parseru pro získání přímého odkazu na stream
     url = parser.get_stream_url_from_page(link)
-    xbmc.Player().play(url)
+    if url:
+        xbmc.Player().play(url)
+    else:
+        xbmcgui.Dialog().notification("Chyba", "Video nelze přehrát", xbmcgui.NOTIFICATION_ERROR)
 
-# zpracování parametrů
-params = dict(urllib.parse.parse_qsl(sys.argv[2][1:]))
-
+# rozhodnutí podle parametrů
 if "action" in params:
     if params["action"] == "play":
         play_movie(params["title"], params["link"])
