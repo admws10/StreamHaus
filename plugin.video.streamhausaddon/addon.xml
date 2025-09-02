@@ -1,7 +1,7 @@
 <addon id="plugin.video.streamhausaddon"
        name="StreamHaus"
        version="0.1"
-       provider-name="Ty">
+       provider-name="admws10">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
     </requires>
