@@ -1,0 +1,72 @@
+{
+  "movies": [
+    {
+      "id": "1759493742759",
+      "movieId": 557,
+      "title": "Spider-Man",
+      "streams": [
+        {
+          "id": "1",
+          "language": "Czech",
+          "quality": "1080p",
+          "url": "https://storage1-1.premiumcdn.net/29851184/oZktQ9Iy8CAJIN7FQYT6WIJ5iL9i1MfzBuKvHGmcMntjDhLWiYGfw1se2TOATzgHBos20U9vhRGHlBFnKsy8U32iz9FvOHMWHA4IojHnlSRofJOH68fNl.mp4?token=A1206ZyNVCax&expires=1759579222&sparams=token%2Cpath%2Cexpires&signature=47f5df3b07f485927bcfc3cf7a3de030280fb85e",
+          "subtitles": []
+        }
+      ],
+      "addedBy": "admws10",
+      "addedAt": "2025-10-05T14:56:09.114Z"
+    },
+    {
+      "id": "1759515142962",
+      "movieId": 617126,
+      "title": "The Fantastic 4: First Steps",
+      "streams": [
+        {
+          "id": "1",
+          "language": "Czech",
+          "quality": "1080p",
+          "url": "https://storage4-4.premiumcdn.net/148596129/mGLtOJhOmTyefdgHMYHp9h5OSrmF8gs7eH6ki83cLvs1VUbxCevC46tbDSvgCwGFZOHb1SG5SVAHo1iw0URwibzF3et8zCV6FmzUR2sV1H92sJnTyEiwJ.mp4?token=A1206ZyNVCax&expires=1759596719&sparams=token%2Cpath%2Cexpires&signature=1609f2bf7fcdd889f8c25a7c80b20eeb4acd334b"
+        }
+      ],
+      "addedBy": "maminka",
+      "addedAt": "2025-10-03T18:12:26.916Z"
+    },
+    {
+      "id": "1759562348187",
+      "movieId": 324857,
+      "title": "Spider-Man: Into the Spider-Verse",
+      "streams": [
+        {
+          "id": "1",
+          "language": "English",
+          "quality": "1080p",
+          "url": "https://storage1-2.premiumcdn.net/149721876/Ko4iOLsQpcKNh58Cq8t58szPixwHpeHXgud0SwzfOGhB9tMLfm5c8JIeYU08syNh0duXNt8DFobfYnS3lhdWFxjHbLFGehLRCWYHjNSkLiqzHnpTQxtbL.mp4?token=A1206ZyNVCax&expires=1759648723&sparams=token%2Cpath%2Cexpires&signature=9f9998ad4adcdb671f74f85fc2292a64e2427daa"
+        }
+      ],
+      "addedBy": "maminka",
+      "addedAt": "2025-10-04T07:20:08.120Z"
+    },
+    {
+      "id": "1759562455022",
+      "movieId": 559,
+      "title": "Spider-Man 3",
+      "streams": [
+        {
+          "id": "1",
+          "language": "English",
+          "quality": "1080p",
+          "url": "https://storage3-1.premiumcdn.net/30047836/Begt3nu7oHZkiDWs9GH2zulVH04HkmU1xUeQsG2HNmTrgSNjF9niaNI28s1rhX1sg4T6rt68CDBiRkUMEUN1sz6FVWhpdCbWc0rt1ZCq5fm2UeXh1qHqA.mp4?token=A1206ZyNVCax&expires=1759762554&sparams=token%2Cpath%2Cexpires&signature=8b7106b3a62f6fd9a17818621c794474289108fc",
+          "subtitles": [
+            {
+              "language": "Czech",
+              "url": "blob:https://zp1v56uxy8rdx5ypatb0ockcb9tr6a-oci3--5173--96435430.local-credentialless.webcontainer-api.io/be004a4a-16ad-48e4-b4e0-e0c57178b81f"
+            }
+          ]
+        }
+      ],
+      "addedBy": "admws10",
+      "addedAt": "2025-10-05T14:56:20.277Z"
+    }
+  ],
+  "lastUpdated": "2025-10-07T17:52:06.987Z"
+}
